@@ -1,7 +1,5 @@
 package resuables;
 
-import org.openqa.selenium.WebElement;
-
 import OR.HomepageOR;
 
 public class BussinessComponent extends TechnicalComponents {
@@ -23,4 +21,13 @@ public class BussinessComponent extends TechnicalComponents {
 		 }
 		or. Highlightcard(or.card);
 	 }
+	 
+	public void Text_search() {
+		or=new  HomepageOR(driver);
+		or.SearchBox(or.search, "The Dogs");
+	}
+	public void Login_page_button() {
+		or=new HomepageOR(driver);
+		or.Loginpage(or.Login);
+	}
 }

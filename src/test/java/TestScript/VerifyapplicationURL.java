@@ -9,5 +9,7 @@ public class VerifyapplicationURL  extends BussinessComponent{
 	@Test
 	public void verifapplicationURL() throws Exception {
 		openapplication() ;
+		Text_search();
+		Login_page_button();
 	}
 }
