@@ -22,12 +22,18 @@ public static WebDriver driver;
 		 String curl=driver.getCurrentUrl();
 		 return curl;
 	 }
+	 public static void type (WebElement element,String text) {
+		 element.sendKeys(text);
+	 }
 	 
 	 public String getText(WebElement element) {
 		 String text=element.getText();
 		 return text;
 	 }
-	  public void Click(WebElement element) {
+	  public static void waitforpageload() {
+		 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	 }
+	  public  static void Click(WebElement element) {
 		  element.click();
 	  }
 	   public static  void highlightElement(WebElement element) {

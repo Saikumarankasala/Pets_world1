@@ -21,7 +21,20 @@ public class HomepageOR extends TechnicalComponents {
 	 @FindBy(xpath="//ul[@class='react-multi-carousel-track ']/li")
 		public WebElement card;
 	 
+	 @FindBy(xpath="//div[@class='h-12 bg-white w-full max-w-2xl rounded-md relative']/input[@name='search']")
+	 public WebElement search;
+	 
+	 @FindBy(xpath="(//div[@class='flex flex-1 justify-end h-full space-x-5 md:space-x-10']/div[@class='h-full hidden md:flex items-center'])[2]/a[@href='/auth/v2']")
+	 public WebElement Login;
+	 
 	  public void Highlightcard(WebElement element) {
 		  highlightElement( element);
 	  }
+      public void SearchBox(WebElement element,String text) {
+	 TechnicalComponents.type(element, text);
+}
+      public void Loginpage(WebElement element) {
+    	  TechnicalComponents.Click(element);
+
+      }
 }
