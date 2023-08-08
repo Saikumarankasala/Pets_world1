@@ -24,8 +24,22 @@ public class HomepageOR extends TechnicalComponents {
 	 @FindBy(xpath="//div[@class='h-12 bg-white w-full max-w-2xl rounded-md relative']/input[@name='search']")
 	 public WebElement search;
 	 
-	 @FindBy(xpath="(//div[@class='flex flex-1 justify-end h-full space-x-5 md:space-x-10']/div[@class='h-full hidden md:flex items-center'])[2]/a[@href='/auth/v2']")
-	 public WebElement Login;
+//	 @FindBy(xpath="(//div[@class='flex flex-1 justify-end h-full space-x-5 md:space-x-10']/div[@class='h-full hidden md:flex items-center'])[2]/a[@href='/auth/v2']")
+//	 public WebElement Login;
+//	 
+//	 @FindBy(xpath="//input[@placeholder='Mobile Number / Email']")
+//	 public WebElement mobilenumber;
+//	 
+//	 @FindBy(xpath="//button[@type='submit']/div[@class='flex items-center']/div[contains(text(),'Continue')]")
+//	 public WebElement submit;
+//	 
+	 @FindBy(xpath="//*[@id=\"__next\"]/header/div[1]/div/div[2]/div[1]/div[2]/ul/li[1]")
+	 public WebElement Search_dogs;
+	 
+	 @FindBy(xpath="//div[@class='w-full hidden lg:block relative']/nav/ul/li/span[contains(text(),'Shop by Pet')]")
+	 public WebElement shopbypet;
+	 
+	 
 	 
 	  public void Highlightcard(WebElement element) {
 		  highlightElement( element);
@@ -33,8 +47,19 @@ public class HomepageOR extends TechnicalComponents {
       public void SearchBox(WebElement element,String text) {
 	 TechnicalComponents.type(element, text);
 }
-      public void Loginpage(WebElement element) {
+//      public void Loginpage(WebElement element) {
+//    	  TechnicalComponents.Click(element);
+//      }
+//      public void Enter_mobileNumber(WebElement element,String text) {
+//    	  TechnicalComponents.type(element, text);
+//      }
+//      public void Submit_continue(WebElement element) {
+//    	  TechnicalComponents.Click(element);
+//      }
+      public void Searching(WebElement element) {
     	  TechnicalComponents.Click(element);
-
       }
+      public void Shop_By_Pets(WebElement element) {
+    	  TechnicalComponents.Click(element);
+    	  }
 }

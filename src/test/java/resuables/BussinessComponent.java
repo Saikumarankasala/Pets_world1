@@ -26,8 +26,24 @@ public class BussinessComponent extends TechnicalComponents {
 		or=new  HomepageOR(driver);
 		or.SearchBox(or.search, "The Dogs");
 	}
-	public void Login_page_button() {
+//	public void Login_page_button() {
+//		or=new HomepageOR(driver);
+//		or.Loginpage(or.Login);
+//	}
+//	public void Enter_mobile_or_Email() {
+//		or=new HomepageOR(driver);
+//        or.Enter_mobileNumber(or.mobilenumber, "8977977978");	
+//	}
+//	public void Submit_Continue_Button() {
+//		or=new HomepageOR(driver);
+//		or.Submit_continue(or.submit);
+//	}
+	public void Search_dogs_1() {
 		or=new HomepageOR(driver);
-		or.Loginpage(or.Login);
+        or.Searching(or.Search_dogs);
+	}
+	public void ShopBy_Pets_button() {
+		or=new HomepageOR(driver);
+		or.Shop_By_Pets(or.shopbypet);
 	}
 }
