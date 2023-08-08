@@ -26,8 +26,12 @@ public class BussinessComponent extends TechnicalComponents {
 		or=new  HomepageOR(driver);
 		or.SearchBox(or.search, "The Dogs");
 	}
-	public void Login_page_button() {
+	public void Searching_dog(){
 		or=new HomepageOR(driver);
-		or.Loginpage(or.Login);
+		or. Text_search(or.Search_text);
+	}
+	public void pet_shop() {
+		or=new HomepageOR(driver);
+		or.Actions_class(or.MOUSERHOVER_ACTIONS);
 	}
 }

@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import config.BaseClass;
 
@@ -42,5 +43,8 @@ public static WebDriver driver;
 		   ex.executeScript("arguments[0].style.border='10px solid red'",element);
 		   
 	   }
+	   
+		   
+	   }
 	
-}
+

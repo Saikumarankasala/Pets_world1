@@ -10,6 +10,7 @@ public class VerifyapplicationURL  extends BussinessComponent{
 	public void verifapplicationURL() throws Exception {
 		openapplication() ;
 		Text_search();
-		Login_page_button();
+		Searching_dog();
+		pet_shop();
 	}
 }
